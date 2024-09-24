@@ -1,0 +1,17 @@
+import { userData } from "../utils/constant/userData";
+import Card from "../component/common/Card.jsx";
+
+const Home = () => {
+  return (
+    <>
+      <div className="flex gap-5 flex-wrap my-5 p-10 justify-center">
+        {userData.map((item, index) => {
+          return <Card key={index} data={item} />;
+        })}
+
+      </div>
+    </>
+  );
+};
+
+export default Home;
